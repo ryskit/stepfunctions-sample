@@ -11,24 +11,36 @@
 
 ## セットアップ
 
+### AWS CDK インストール
+
+```shell
+$ npm install -g aws-cdk
+
+
+### npm　インストール
+
+```shell
+$ npm install
+```
+
 ### AWS ACCOUNT IDを書き換える
 
 bin/stepfunctions.ts に `YOUR_AWS_ACCOUNT_ID` と書かれている部分を自身が利用しているAWSアカウントIDに書き換えてください。
 
 ### cdk bootstrapを実行する
 
-```
+```shell
 $ cdk bootstrap aws://YOUR_AWS_ACCOUNT_ID/ap-northeast-1 --profile your-profile-name
 ```
 
 ## ビルド
 
-```
+```shell
 $ npm run build
 ```
 
 ## デプロイ
 
-```
+```shell
 $ cdk deploy --profile your-profile-name
 ```
