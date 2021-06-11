@@ -17,7 +17,7 @@
 $ npm install -g aws-cdk
 ```
 
-### npm　インストール
+### npm インストール
 
 ```shell
 $ npm install
