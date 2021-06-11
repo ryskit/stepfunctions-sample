@@ -1,14 +1,30 @@
-# Welcome to your CDK TypeScript project!
+# AWS CDK + Step Functions サンプルプロジェクト
 
-This is a blank project for TypeScript development with CDK.
+## 概要
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+[【Developers.IO 2020 CONNECT】AWS CDK + AWS Step Functions入門](https://dev.classmethod.jp/articles/developers-io-2020-connect-aws-cdk-aws-step-functions/) を参考にAWS CDK, AWS Lambda, Step Functionsを試すためのプロジェクトです。
 
-## Useful commands
 
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
+## セットアップ
+
+### AWS ACCOUNT IDを書き換える
+
+bin/stepfunctions.ts に `YOUR_AWS_ACCOUNT_ID` と書かれている部分を自身が利用しているAWSアカウントIDに書き換えてください。
+
+### cdk bootstrapを実行する
+
+```
+$ cdk bootstrap aws://YOUR_AWS_ACCOUNT_ID/ap-northeast-1 --profile your-profile-name
+```
+
+## ビルド
+
+```
+$ npm run build
+```
+
+## デプロイ
+
+```
+$ cdk deploy --profile your-profile-name
+```
