@@ -4,6 +4,10 @@
 
 [【Developers.IO 2020 CONNECT】AWS CDK + AWS Step Functions入門](https://dev.classmethod.jp/articles/developers-io-2020-connect-aws-cdk-aws-step-functions/) を参考にAWS CDK, AWS Lambda, Step Functionsを試すためのプロジェクトです。
 
+作成されるステートマシン
+
+<img width="727" alt="stepfunctions_image" src="https://user-images.githubusercontent.com/5232435/121681117-5cf09100-caf5-11eb-9122-b73aa291ee09.png">
+
 
 ## セットアップ
 
