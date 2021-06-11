@@ -11,7 +11,7 @@
 
 bin/stepfunctions.ts に `YOUR_AWS_ACCOUNT_ID` と書かれている部分を自身が利用しているAWSアカウントIDに書き換えてください。
 
-### cdk bootstrapを実行する
+### cdk bootstrapを実行する
 
 ```
 $ cdk bootstrap aws://YOUR_AWS_ACCOUNT_ID/ap-northeast-1 --profile your-profile-name
